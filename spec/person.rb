@@ -1,8 +1,7 @@
 class Person
-  attr_reader :id. :name, :age
-  attr_writer :name, :age
+  attr_accessor :id, :name, :age
 
-  def initialize(age, name='Unknown', parent_permission=true,)
+  def initialize(age, name: 'Unknown', parent_permission: true)
     @id = Random.rand(1..100)
     @name = name
     @age = age
