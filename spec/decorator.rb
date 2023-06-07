@@ -16,3 +16,10 @@ class CapitalizeDecorator
         @nameable.correct_name.capitalize
     end
 end
+
+class TrimmerDecorator
+    def correct_name
+        name = @nameable.correct_name.capitalize[0..9]
+        name.length <= @nameable.correct_name.capitalize.length ? "#{name}..." : name
+    end
+end
