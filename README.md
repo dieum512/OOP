@@ -58,8 +58,11 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Create tables in SQL.]**
-- **[Insert and query data in SQL.]**
+- **[Implement classes and objects in Ruby.]**
+- **[Implement encapsulation and inheritance with Ruby.]**
+- **[Run a program using the command line.]**
+- **[Implement composition (as an example of the design pattern).]**
+- **[Run a program using the command line.]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -121,9 +124,8 @@ rubocop
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Use database transactions.]**
-- [ ] **[Modify and delete data in SQL.]**
-- [ ] **[Prepare complex queries that answer analytical questions.]**
+- [ ] **[Run a program using the command line.]**
+- [ ] **[Set up associations between classes and objects.]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
