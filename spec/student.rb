@@ -1,4 +1,4 @@
-require_relative './person'
+require_relative 'person'
 
 class Student < Person
   def initialize(age, name: 'Unknown', parent_permission: true, classroom: 'Unknown')
@@ -8,5 +8,10 @@ class Student < Person
 
   def play_hooky
     '¯\(ツ)/¯'
+  end
+
+  def classroom=(classroom)
+    @classroom = classroom
+    classroom.students.push(self) unless classroom.students.include?(self)
   end
 end
