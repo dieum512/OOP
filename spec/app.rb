@@ -59,4 +59,18 @@ class App
         @book.push('book', book)
         puts 'Book created successfully'
     end
+
+    def add_person
+        puts 'Do you want to createte a student(1), or a teacher(2)? [Input the number]: '
+        person = gets.chomp
+        if person == '1'
+            add_student
+            puts 'Student created successfully'
+        elsif person == '2'
+            add_teacher
+            puts 'Teacher created succesfully'
+        else
+            puts 'Invalid Value'
+        end
+    end
 end
