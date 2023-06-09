@@ -7,11 +7,14 @@ class Main
         @app = app
     end
 
-    # def main
-    #     loop do
-
-    #     end
-    # end
+    def main
+        loop do
+            display_menu
+            menu = gets.chomp.to_i
+            menu_choice(menu)
+            break if menu == 7
+        end
+    end
 
     def display_menu
         puts 'please choose an option by entering a nunmber'
@@ -51,3 +54,4 @@ end
 
 app = App.new
 myapp = Main.new
+myapp.main
