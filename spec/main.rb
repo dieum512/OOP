@@ -24,4 +24,30 @@ class Main
         puts '6 - List all the rental for a given person id'
         puts '7 - Exit'
     end
+
+    def menu_choice(menu)
+        menu_actions = {
+            1 => :list_all_books,
+            2 => :list_all_people,
+            3 => :add_person,
+            5 => :create_rental,
+            6 => :list_all_rentals,
+            7 => :exit
+        }
+
+        action = menu_actions[menu]
+        if action
+            if action == :exit
+                puts 'Thanks for using the app!'
+                exit
+            else
+                @app.send(action)
+            end
+        else
+            puts 'Invalid value. Please try again'
+        end
+    end
 end
+
+app = App.new
+myapp = Main.new
