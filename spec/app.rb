@@ -12,13 +12,13 @@ class App
 
     def list_all_books
         @books.each do |book|
-            puts "Title: #{book.title}, Author: #{book.author}"
+            puts "Title: #{book[1].title}, Author: #{book[1].author}"
         end
     end
 
     def list_all_people
         @people.each do |people|
-            puts "#{[people[0]]}, Name: #{people.name}, ID: #{people.id}, Age: #{people.age}"
+            puts "#{[people[0]]}, Name: #{people[1].name}, ID: #{people[1].id}, Age: #{people[1].age}"
         end
     end
     
@@ -73,4 +73,9 @@ class App
             puts 'Invalid Value'
         end
     end
+
+    # def create_rental
+    #     puts 'Select a book from the following list by number'
+
+    # end
 end
