@@ -34,4 +34,17 @@ class App
 
         @people.push(['student', student])
     end
+
+    def add_teacher
+        puts 'Age: '
+        age = gets.chomp
+        puts 'Name: '
+        name = gets.chomp
+        puts 'Specialization'
+        specialization = gets.chomp
+
+        teacher = Teacher.new(age, specialization, name)
+
+        @people.push(['teacher', teacher])
+    end
 end
