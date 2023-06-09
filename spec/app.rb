@@ -22,4 +22,16 @@ class App
         end
     end
     
+    def add_student
+        puts 'Age: '
+        age = gets.chomp
+        puts 'Name: '
+        name = gets.chomp
+        puts 'Has parent permission? [Y/N]: '
+        parent_permission = gets.chomp
+
+        student = Student.new(age, name, parent_permission)
+
+        @people.push(['student', student])
+    end
 end
